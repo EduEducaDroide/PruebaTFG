@@ -1,0 +1,31 @@
+.botiquin-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #fff;
+  }
+  
+  .botiquin-container h1 {
+    text-align: center;
+    color: #2980b9;
+    margin-bottom: 20px;
+  }
+  
+  .botiquin-container p {
+    margin-bottom: 15px;
+  }
+  
+  .botiquin-container ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .botiquin-container ul li {
+    margin-bottom: 10px;
+  }
+  
+  .botiquin-container ul li strong {
+    color: #2980b9;
+  }
+  

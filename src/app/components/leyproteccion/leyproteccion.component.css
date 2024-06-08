@@ -1,0 +1,41 @@
+.proteccion-datos-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #fff;
+  }
+  
+  .proteccion-datos-container h1 {
+    color: #007bff;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .proteccion-datos-container h2 {
+    color: #007bff;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .proteccion-datos-container p,
+  .proteccion-datos-container ul {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+  }
+  
+  .proteccion-datos-container ul {
+    margin-left: 20px;
+  }
+  
+  .proteccion-datos-container li {
+    margin-bottom: 5px;
+  }
+  
+  .proteccion-datos-container strong {
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  

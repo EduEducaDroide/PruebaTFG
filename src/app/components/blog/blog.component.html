@@ -1,0 +1,22 @@
+<div class="blog-container">
+  <h1>Blog</h1>
+
+  <div class="updates">
+    <h2>Futuras Actualizaciones</h2>
+    <div class="update" *ngFor="let update of updates">
+      <h3>{{ update.title }}</h3>
+      <p class="date">{{ update.date | date }}</p>
+      <p>{{ update.description }}</p>
+    </div>
+  </div>
+
+  <div class="articles">
+    <h2>Artículos</h2>
+    <div class="article" *ngFor="let article of articles">
+      <h3>{{ article.title }}</h3>
+      <p class="date">{{ article.date | date }}</p>
+      <p>{{ article.excerpt }}</p>
+      <a [href]="article.link" target="_blank" class="read-more">Leer más</a>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,68 @@
+<h1>Demo</h1>
+<div class="slider-container">
+  <div class="slide-text">
+    <p>
+      Tenemos disponibles una variedad de temas de diferentes sectores como
+      enfermeria, historia y laboratorio
+    </p>
+  </div>
+  <div
+    class="slide"
+    *ngFor="let tema of temas; let i = index"
+    [class.active]="i === currentSlide"
+  >
+    <img [src]="tema.imagen" alt="{{ tema.titulo }}" style="width: 300px" />
+    <div class="content">
+      <h2>{{ tema.titulo }}</h2>
+      <p>{{ tema.resumen }}</p>
+    </div>
+  </div>
+
+  <button (click)="previousSlide()">&#10094;</button>
+  <button (click)="nextSlide()">&#10095;</button>
+</div>
+
+<div class="slider-container">
+  <div class="slide-text">
+    <p>
+      Al finalizar cada tema podrás encontrar un test para reforzar los
+      conocimientos
+    </p>
+  </div>
+  <div
+    class="slide"
+    *ngFor="let pregunta of preguntas; let i = index"
+    [class.active]="i === currentSlide2"
+  >
+    <img
+      [src]="pregunta.imagen"
+      alt="{{ pregunta.titulo }}"
+      class="slide-image"
+      style="width: 300px"
+    />
+    <div class="content">
+      <h2>{{ pregunta.titulo }}</h2>
+      <p class="pregunta">{{ pregunta.pregunta }}</p>
+      <ul>
+        <li>
+          <input type="radio" name="respuesta" id="respuesta1" value="1" />
+          <p>{{ pregunta.respuesta1 }}</p>
+        </li>
+        <li>
+          <input type="radio" name="respuesta" id="respuesta2" value="2" />
+          <p>{{ pregunta.respuesta2 }}</p>
+        </li>
+        <li>
+          <input type="radio" name="respuesta" id="respuesta3" value="3" />
+          <p>{{ pregunta.respuesta3 }}</p>
+        </li>
+        <li>
+          <input type="radio" name="respuesta" id="respuesta4" value="4" />
+          <p>{{ pregunta.respuesta4 }}</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <button (click)="previousSlide2()">&#10094;</button>
+  <button (click)="nextSlide2()">&#10095;</button>
+</div>

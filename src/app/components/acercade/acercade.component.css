@@ -1,0 +1,113 @@
+.about-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: #fff;
+}
+
+.about-container h1 {
+  text-align: center;
+  color: rgb(0, 224, 228);
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+.mission, .vision {
+  margin-bottom: 20px;
+}
+
+.mission h2, .vision h2 {
+  text-align: center;
+  color: #42a4ea;
+  margin-bottom: 20px;
+}
+
+.mission p, .vision p {
+  text-align: center;
+}
+
+.values {
+  margin-top: 40px;
+}
+
+.values h2 {
+  text-align: center;
+  color: #42a4ea;
+  margin-bottom: 20px;
+}
+
+.values ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.values ul li {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+
+.values ul li strong {
+  color: #21c9b6;
+}
+
+.team {
+  margin-top: 40px;
+}
+
+.team h2 {
+  text-align: center;
+  color: #42a4ea;
+  margin-bottom: 20px;
+}
+
+.team-members {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.team-member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+  width: 200px;
+}
+
+.card-client {
+  background: #2cb5a0;
+  width: 13rem;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 4px solid #7cdacc;
+  box-shadow: 0 6px 10px rgba(207, 212, 222, 1);
+  border-radius: 10px;
+  text-align: center;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease;
+}
+
+.team-member img {
+  border-radius: 50%;
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  background-color: #fff;
+}
+
+.team-member h3 {
+  margin: 10px 0 5px;
+  color: #0014f4;
+}
+
+.team-member p {
+  margin: 0;
+  font-size: 1em;
+  color: #dceeef;
+}

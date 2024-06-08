@@ -1,0 +1,11 @@
+<div class="contacts-list">
+  <h1>Contactos Guardados</h1>
+  <ul>
+    <li *ngFor="let contact of contacts">
+      <strong>Nombre:</strong> {{ contact.name }}<br />
+      <strong>Email:</strong> {{ contact.email }}<br />
+      <strong>Teléfono:</strong> {{ contact.phone }}<br />
+      <strong>Mensaje:</strong> {{ contact.message }}
+    </li>
+  </ul>
+</div>

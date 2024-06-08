@@ -1,0 +1,31 @@
+.contacts-list {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #fff;
+  }
+  
+  .contacts-list h1 {
+    text-align: center;
+    color: rgb(0, 224, 228);
+    font-size: 60px;
+    margin-bottom: 40px;
+  }
+  
+  .contacts-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .contacts-list li {
+    background-color: #2c3e50;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .contacts-list li strong {
+    color: #2980b9;
+  }
+  

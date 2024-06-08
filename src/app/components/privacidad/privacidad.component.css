@@ -1,0 +1,30 @@
+.policy-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #fff;
+  }
+  
+  .policy-container h1 {
+    text-align: center;
+    color: rgb(0, 224, 228);
+    font-size: 60px;
+    margin-bottom: 40px;
+  }
+  
+  .section {
+    margin-bottom: 30px;
+  }
+  
+  .section h2 {
+    color: #2980b9;
+    margin-bottom: 10px;
+  }
+  
+  .section p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+  

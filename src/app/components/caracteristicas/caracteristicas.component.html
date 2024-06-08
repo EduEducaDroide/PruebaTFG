@@ -1,0 +1,14 @@
+<div class="features-container">
+  <h1>Características</h1>
+  <div class="feature" *ngFor="let feature of features">
+    <div class="feature-content">
+      <div class="text-content">
+        <h2>{{ feature.title }}</h2>
+        <p>{{ feature.description }}</p>
+      </div>
+      <div class="image-content">
+        <img [src]="feature.imagen" alt="{{ feature.title }}" />
+      </div>
+    </div>
+  </div>
+</div>

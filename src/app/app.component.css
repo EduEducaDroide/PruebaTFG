@@ -1,0 +1,352 @@
+.cuerpo{
+  background-color: #343a40;
+  width: 100%;
+}
+/* Estilos para el menú de navegación */
+nav {
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #2d3238;/* Naranja background-color: #ff6600;*/
+    color: #fff;
+    padding: 15px 0; /* Aumentar el espacio entre el contenido del menú y los bordes */
+    text-align: left; /* Centrar el contenido del menú */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block; /* Cambiar a inline-block para tener más control del espacio entre elementos */
+    margin-right: 50px; /* Aumentar el espacio entre los elementos */
+}
+
+nav ul li:first-child {
+    margin-right: 235px;
+    margin-left: 15px; /* Aplicar margen cero solo al primer elemento */
+}
+
+nav ul li a {
+    text-decoration: none;
+    display: block;
+    padding: 15px 30px; /* Aumentar el espacio entre el texto y los bordes del cuadrado */
+    transition: background-color 1s; /* Transición de color de fondo al pasar el cursor */
+    font-size: 18px; /* Aumentar el tamaño del texto */
+    font-weight: bold; /* Negrita */
+}
+
+nav ul li a.inicio {
+    color: darkturquoise; /* Cambiar el color del texto a azul */
+    box-shadow: 0 0 0 2px darkturquoise;
+}
+
+nav ul li a.inicio:hover {
+    background-color: darkturquoise;
+}
+
+nav ul li a.inicio:active{
+    box-shadow: 0 0 0 8px darkturquoise;
+}
+
+nav ul li a.inicio .circle {
+    
+    background-color: darkturquoise; /* Cambiar el color del círculo a azul */
+}
+
+.animated-button {
+    position: relative;
+    display: inline-block; /* Cambiado a inline-block para que el botón se ajuste al tamaño del texto */
+    padding: 20px 40px; /* Aumentar el espacio alrededor del botón */
+    border: 4px solid transparent;
+    font-size: 16px;
+    background-color: inherit;
+    border-radius: 100px;
+    font-weight: 600;
+    color: orange;
+    box-shadow: 0 0 0 2px orange;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 4s cubic-bezier(0.23, 1, 0.32, 1);
+    
+}
+
+.animated-button svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 24px;
+    fill: transparent;
+    z-index: 9;
+    transition: all 1s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button .circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    background-color: orange;
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 4s cubic-bezier(0.23, 1, 0.32, 1); /* Ajustar la duración de la transición */
+}
+
+.animated-button:hover {
+    box-shadow: 0 0 0 12px transparent;
+    background-color: orange; /* Cambio de color de fondo al pasar el ratón */
+    color: transparent; /* Cambio de color de texto al pasar el ratón */
+    fill: transparent;
+    border-radius: 25px;
+}
+
+.animated-button:hover svg,
+.animated-button:active svg {
+    fill: white; /* Cambio de color del ícono al pasar el ratón */
+}
+
+.animated-button:active {
+    color: transparent; /* Cambio de color de texto al pasar el ratón */
+    fill: transparent;
+    scale: 0.90;
+    box-shadow: 0 0 0 8px rgba(247, 182, 62, 0.8); /* Aumentar la separación del box-shadow y ajustar su opacidad */
+}
+.animated-button:hover .circle {
+    width: 220px;
+    height: 220px;
+    opacity: 1;
+}
+
+
+/* Estilos para el footer */
+footer {
+    background-color: #2d3238;
+    color: #fff;
+    padding: 20px 0px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    
+}
+
+footer h3 {
+    color: #fff;
+}
+
+footer p, footer ul {
+    margin-bottom: 10px;
+}
+
+footer ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+footer ul li a {
+    color: #ffffff;
+    fill: #ffffff;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    text-decoration: overline;
+    color: orange;
+    fill: orange;
+
+}
+
+
+/* Estrellas */
+.rating-container {
+    display: flex;
+    margin-left: 30px;
+    justify-content: left;
+    align-items: center;
+}
+
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 0.3rem;
+    --stroke: #666;
+    --fill: darkturquoise;
+  }
+  
+  .rating input {
+    appearance: unset;
+  }
+  
+  .rating label {
+    cursor: pointer;
+  }
+  
+  .rating svg {
+    width: 2rem;
+    height: 2rem;
+    overflow: visible;
+    fill: transparent;
+    stroke: var(--stroke);
+    stroke-linejoin: bevel;
+    stroke-dasharray: 12;
+    animation: idle 4s linear infinite;
+    transition: stroke 0.2s, fill 0.5s;
+  }
+  
+  @keyframes idle {
+    from {
+      stroke-dashoffset: 24;
+    }
+  }
+  
+  .rating label:hover svg {
+    stroke: var(--fill);
+  }
+  
+  .rating input:checked ~ label svg {
+    transition: 0s;
+    animation: idle 4s linear infinite, yippee 0.75s backwards;
+    fill: var(--fill);
+    stroke: var(--fill);
+    stroke-opacity: 0;
+    stroke-dasharray: 0;
+    stroke-linejoin: miter;
+    stroke-width: 8px;
+  }
+  
+  @keyframes yippee {
+    0% {
+      transform: scale(1);
+      fill: var(--fill);
+      fill-opacity: 0;
+      stroke-opacity: 1;
+      stroke: var(--stroke);
+      stroke-dasharray: 10;
+      stroke-width: 1px;
+      stroke-linejoin: bevel;
+    }
+  
+    30% {
+      transform: scale(0);
+      fill: var(--fill);
+      fill-opacity: 0;
+      stroke-opacity: 1;
+      stroke: var(--stroke);
+      stroke-dasharray: 10;
+      stroke-width: 1px;
+      stroke-linejoin: bevel;
+    }
+  
+    30.1% {
+      stroke: var(--fill);
+      stroke-dasharray: 0;
+      stroke-linejoin: miter;
+      stroke-width: 8px;
+    }
+  
+    60% {
+      transform: scale(1.2);
+      fill: var(--fill);
+    }
+  }
+
+
+/* Socials */
+
+.social {
+  display: flex;
+  align-items: start;
+  text-align: left;
+}
+
+
+ul {
+    list-style: none;
+  }
+  
+  .example-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+  }
+  .example-2 .icon-content {
+    margin: 0 10px;
+    position: relative;
+  }
+  .example-2 .icon-content .tooltip {
+    position: absolute;
+    top: -10px;
+    text-align: center;
+    transform: translateY(150%);
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 15px;
+    opacity: 0;
+    visibility: hidden;
+    font-size: 18px;
+    transition: all 0.3s ease;
+  }
+  .example-2 .icon-content:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+    top: 6px;
+  }
+  .example-2 .icon-content a {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 20%;
+    color: #4d4d4d;
+    background-color: #ffff;
+    transition: all 0.3s ease-in-out;
+  }
+  .example-2 .icon-content a:hover {
+    box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 50%);
+  }
+  .example-2 .icon-content a svg {
+    position: relative;
+    z-index: 1;
+    width: 30px;
+    height: 30px;
+  }
+  .example-2 .icon-content a:hover {
+    color: white;
+  }
+  .example-2 .icon-content a .filled {
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: #000;
+    transition: all 0.3s ease-in-out;
+  }
+  .example-2 .icon-content a:hover .filled {
+    height: 100%;
+  }
+  .example-2 .icon-content a[data-social="spotify"] .filled,
+  .example-2 .icon-content a[data-social="spotify"] ~ .tooltip {
+    background-color: #000000;
+  }
+  .example-2 .icon-content a[data-social="pinterest"] .filled,
+  .example-2 .icon-content a[data-social="pinterest"] ~ .tooltip {
+    background-color: #00c1df;
+  }
+  .example-2 .icon-content a[data-social="dribbble"] .filled,
+  .example-2 .icon-content a[data-social="dribbble"] ~ .tooltip {
+    background-color: #ea4c89;
+  }

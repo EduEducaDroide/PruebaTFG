@@ -1,0 +1,53 @@
+.blog-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #fff;
+  }
+  
+  .blog-container h1 {
+    text-align: center;
+    color: rgb(0, 224, 228);
+    font-size: 60px;
+    margin-bottom: 40px;
+  }
+  
+  .updates, .articles {
+    margin-bottom: 40px;
+  }
+  
+  .updates h2, .articles h2 {
+    color: #42a4ea;
+    margin-bottom: 20px;
+  }
+  
+  .update, .article {
+    margin-bottom: 20px;
+  }
+  
+  .update h3, .article h3 {
+    color: #21c9b6;
+    margin-bottom: 10px;
+  }
+  
+  .update .date, .article .date {
+    font-size: 0.9em;
+    color: #cdcdcd;
+    margin-bottom: 10px;
+  }
+  
+  .update p, .article p {
+    font-size: 1.1em;
+    line-height: 1.6;
+  }
+  
+  .article .read-more {
+    color: #2980b9;
+    text-decoration: none;
+  }
+  
+  .article .read-more:hover {
+    text-decoration: underline;
+  }
+  

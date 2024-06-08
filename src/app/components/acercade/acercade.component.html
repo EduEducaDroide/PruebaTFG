@@ -1,0 +1,64 @@
+<div class="about-container">
+  <h1>Acerca de Nosotros</h1>
+
+  <div class="mission">
+    <h2>Misión</h2>
+    <p>
+      Proporcionar acceso gratuito y actualizado a libros escolares para
+      estudiantes de todo el mundo.
+    </p>
+  </div>
+
+  <div class="vision">
+    <h2>Visión</h2>
+    <p>
+      Ser la plataforma educativa líder que empodera a estudiantes a través del
+      conocimiento accesible.
+    </p>
+  </div>
+
+  <div class="values">
+    <h2>Valores</h2>
+    <ul>
+      <li>
+        <strong>Accesibilidad:</strong> Creemos en el acceso libre y equitativo
+        al conocimiento para todos los estudiantes, sin importar su ubicación o
+        situación económica.
+      </li>
+      <li>
+        <strong>Calidad:</strong> Nos comprometemos a ofrecer contenido
+        educativo de alta calidad y actualizado que cumpla con los estándares
+        educativos.
+      </li>
+      <li>
+        <strong>Innovación:</strong> Fomentamos la innovación y la adopción de
+        nuevas tecnologías para mejorar continuamente la experiencia de
+        aprendizaje.
+      </li>
+      <li>
+        <strong>Inclusión:</strong> Promovemos un entorno inclusivo que respete
+        y valore la diversidad de nuestros usuarios.
+      </li>
+      <li>
+        <strong>Compromiso:</strong> Nos dedicamos a apoyar el crecimiento
+        educativo de los estudiantes y a responder a sus necesidades de
+        aprendizaje.
+      </li>
+    </ul>
+  </div>
+
+  <div class="team">
+    <h2>Conoce a nuestro equipo</h2>
+    <div class="team-members">
+      <div class="team-member" *ngFor="let member of teamMembers">
+        <div class="card-client" style="width: 18rem">
+          <img [src]="member.photo" alt="{{ member.name }}" />
+          <div class="card-body">
+            <h3>{{ member.name }}</h3>
+            <p>{{ member.role }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
