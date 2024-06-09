@@ -1,5 +1,5 @@
 <div class="inicio-container">
-  <img class="logo" src="../../../assets/LogoAnimado.gif" alt="Logo GIF" />
+  <img class="logo" src="../../../assets/Logo.jpg" alt="Logo" />
   <h1>Transforma tu manera de estudiar con nuestra app educativa gratuita</h1>
   <h2>
     Acceso ilimitado a libros escolares actualizados, recursos de estudio y más.
@@ -7,7 +7,7 @@
   <div class="cta-container">
     <img
       class="cta-image"
-      src="../../../assets/flechas.gif"
+      src="../../../assets/flechas.png"
       alt="Descarga la app"
     />
     <button class="botao" routerLink="/demo">
@@ -44,15 +44,15 @@
 
   <div class="features">
     <div class="feature">
-      <h3><a href="/caracteristicas">Características</a></h3>
+      <h3><a [routerLink]="['caracteristicas']">Características</a></h3>
       <p>Explora todas las funciones que ofrece nuestra app</p>
     </div>
     <div class="feature">
-      <h3><a href="/demo">Demo</a></h3>
+      <h3><a [routerLink]="['demo']">Demo</a></h3>
       <p>Echa un vistazo a lo que ofrece nuesta app y DESCARGALA</p>
     </div>
     <div class="feature">
-      <h3><a href="/acerca-de">Acerca de Nosotros</a></h3>
+      <h3><a [routerLink]="['acerca_de']">Acerca de Nosotros</a></h3>
       <p>Conoce más sobre nuestra misión y valores</p>
     </div>
   </div>
